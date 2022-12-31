@@ -1,0 +1,658 @@
+{% extends 'base.html' %}
+{% load static %}
+  {% block content %}
+
+  <style>
+    #footer {
+      text-align: center;
+      padding: 3px;
+      background-color: #fbdff2;
+      color: black;
+      display:block;
+    }
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .table_shop{
+        width: 100%;
+        height: 70px;
+      }
+      .table_shop th {
+
+       }
+       .container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+       .card {
+         size:55%;
+       }
+    </style>
+<link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/pricing/">
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<body>
+<div class="container py-3">
+<header>
+<div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+  <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+
+  </a>
+</div>
+
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+  <h1 class="display-4 fw-normal" style=" font-weight:bold; font-family:Georgia;">SHOP NOW!</h1>
+  <p class="fs-5 text-muted">All our flower arrangements are passionatly made by our florists. We hope that you find what you are looking for.<br>
+  Gift your loved ones flowers on their birthdays, we have a whole section dedicated to that.<br>
+ENJOY SHOPPING!</p>
+</div>
+<main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Fatima</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">20BD</h5>
+          <img  src="{% static 'gallery/img/fatima.png' %}" height="65%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Elegance</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">16BD</h5>
+           <img  src="{% static 'gallery/img/elegance.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+
+<div class="col">
+  <div class="card mb-4 rounded-3 shadow-sm">
+    <div class="card-header py-3">
+      <h4 class="my-0 fw-normal">Blair</h4>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title pricing-card-title">10BD</h5>
+     <img  src="{% static 'gallery/img/blair.png' %}" height="80%" width="80%" atl="fatima flowers">
+      <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+    </div>
+  </div>
+</div>
+      <br>
+      <br>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Anastasia</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">18BD</h5>
+          <img  src="{% static 'gallery/img/Anastasia.png' %}" height="75%" width="75%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Diana</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">15BD</h5>
+                   <img  src="{% static 'gallery/img/diana.png' %}" height="75%" width="75%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Classy</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">16BD</h5>
+           <img  src="{% static 'gallery/img/classic.png' %}" height="80%" width="80%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Hydrangea</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">18BD</h5>
+          <img  src="{% static 'gallery/img/hydrangea.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Jameela</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">16BD</h5>
+           <img  src="{% static 'gallery/img/jameela.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Fall</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">25BD</h5>
+          <img  src="{% static 'gallery/img/fall.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Pretty</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">10BD</h5>
+           <img  src="{% static 'gallery/img/pretty.png' %}" height="90%" width="90%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">First love</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">14BD</h5>
+            <img  src="{% static 'gallery/img/firstlove.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Congratulations</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">22BD</h5>
+          <img  src="{% static 'gallery/img/congratulations.png' %}"  height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Marigold</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">16BD</h5>
+           <img  src="{% static 'gallery/img/marigold.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Jasmine</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">16BD</h5>
+          <img  src="{% static 'gallery/img/jasmine.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Sarah</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">16BD</h5>
+           <img  src="{% static 'gallery/img/sarah.png' %}" height="90%" width="90%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Jane</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">16BD</h5>
+           <img  src="{% static 'gallery/img/jane.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Edith</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">15BD</h5>
+           <img  src="{% static 'gallery/img/edith.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Royal</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">20BD</h5>
+          <img  src="{% static 'gallery/img/royal.png' %}"  height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Pretty in pink </h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">15BD</h5>
+           <img  src="{% static 'gallery/img/prettyinpink.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Peachy</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">18BD</h5>
+           <img  src="{% static 'gallery/img/peachy.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Luna</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">16BD</h5>
+           <img  src="{% static 'gallery/img/luna.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Elena</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">16BD</h5>
+           <img  src="{% static 'gallery/img/elena.png' %}"  height="60%" width="60%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Elizabeth</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">18BD</h5>
+           <img  src="{% static 'gallery/img/elizabeth.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Euphoria</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">15BD</h5>
+           <img  src="{% static 'gallery/img/euphoria.png' %}" height="90%" width="90%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Velvet</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">18BD</h5>
+           <img  src="{% static 'gallery/img/life.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Reem</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">12BD</h5>
+           <img  src="{% static 'gallery/img/reem.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Summer vibes</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">20BD</h5>
+            <img  src="{% static 'gallery/img/summervibes.png' %}" height="90%" width="90%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Ruqaya</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">20BD</h5>
+          <img  src="{% static 'gallery/img/ruqaya.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Pink vibes</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">24BD</h5>
+           <img  src="{% static 'gallery/img/pinkvibes.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart<a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Pure</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">30BD</h5>
+           <img  src="{% static 'gallery/img/purity.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Sylvie</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">20BD</h5>
+            <img  src="{% static 'gallery/img/sylvie.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Cassandra</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">18BD</h5>
+          <img  src="{% static 'gallery/img/cassandra.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">January</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">18BD</h5>
+            <h4>Carnation</h4>
+        <img  src="{% static 'gallery/img/carnations.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">February</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">16BD</h5>
+            <h4>Iris</h4>
+          <img  src="{% static 'gallery/img/feb.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">March</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">14BD</h5>
+            <h4>Daffodil</h4>
+          <img  src="{% static 'gallery/img/mar.png' %}" height="90%" width="90%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">April</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">15BD</h5>
+            <h4>Daisy</h4>
+        <img  src="{% static 'gallery/img/april.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">May</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">16BD</h5>
+            <h4>Lily</h4>
+          <img  src="{% static 'gallery/img/may.png' %}"height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">June</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">20BD</h5>
+            <h4>Rose</h4>
+        <img  src="{% static 'gallery/img/june.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">July</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">16BD</h5>
+            <h4>Larkspur</h4>
+        <img  src="{% static 'gallery/img/july.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">August</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">15BD</h5>
+            <h4>Gladilous</h4>
+       <img  src="{% static 'gallery/img/aug.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">September</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">16BD</h5>
+            <h4>Aster</h4>
+       <img  src="{% static 'gallery/img/sep.png' %}"  height="65%" width="65%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">October</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">18BD</h5>
+            <h4>Marigold</h4>
+          <img  src="{% static 'gallery/img/oct.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">November</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">16BD</h5>
+            <h4>Chrysanthemum</h4>
+        <img  src="{% static 'gallery/img/nov.png' %}" height="85%" width="85%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">December</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">10BD</h5>
+            <h4>Narcissus</h4>
+       <img  src="{% static 'gallery/img/dec.png' %}"  height="65%" width="65%" atl="fatima flowers">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color:#52487f; color:white;"><a href="/cart/" style="color:white">Add to cart</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    <footer id=footer>
+    <div >
+      <p>Bloom By Fatema<br>
+        <a href="mailto:Bloom@gmail.com">Bloom@gmail.com</a></p>
+      </div>
+      </footer>
+
+
+{% endblock %}

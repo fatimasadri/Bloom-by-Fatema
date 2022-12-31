@@ -1,0 +1,264 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{% load static %}
+  {% block content %}
+
+  <style>
+    #our_story{
+      border:1px solid black;
+      background-color:#faede0;
+    }
+    #our_story h2{
+     font-family:Georgia;
+    }
+    #our_story p{
+      font-family:Arial;
+      float:center;
+    }
+    #faq h2 {
+      font-family:Georgia;
+    }
+    #faq p{
+      font-family:Arial;
+    }
+
+    .accordions {
+   width: 80%;
+   margin: 100px auto;
+   }
+
+   .accordions h3 {
+   text-align: center;
+   font-weight: bold;
+   font-family: "Roboto", sans-serif;
+   }
+
+   .accordion-item {
+   background-color: #9a88a9;
+   border-radius: 5px;
+   color: #ffffff;
+   margin-bottom: 20px;
+   border: 1px solid #100e34;
+   }
+
+   .accordion-item .accordion-title {
+   cursor: pointer;
+   padding: 20px;
+   transition: transform 0.4s ease-in-out;
+   }
+
+   .accordion-item .accordion-title.active-title {
+   background-color: #52487f;
+   color: #ffffff;
+   }
+
+   .accordion-item .accordion-title h3 {
+   font-weight: 700;
+   margin: 0;
+   justify-content: space-between;
+   font-weight: bold;
+   font-size: 18px;
+   display: flex;
+   }
+
+   .accordion-item .accordion-title i.fa-chevron-down {
+   transform: rotate(0);
+   transition: 0.4s;
+   }
+
+   .accordion-item .accordion-title i.fa-chevron-down.chevron-top {
+   transform: rotate(-180deg);
+   color: #fa5019;
+   }
+
+   .accordion-item .accordion-content {
+   display: none;
+   line-height: 1.7;
+   color: #100e34;
+   padding: 20px;
+   background-color: #ffffff;
+   border-radius: 0 0 5px 5px;
+   }
+
+   .accordion-item .accordion-content.active {
+   display: block;
+   }
+
+   .accordion-item .accordion-content p {
+   margin: 0;
+   font-size: 16px;
+   font-family: "Nunito Sans", sans-serif;
+   }
+
+   .details {
+   background: #dce1f2;
+   }
+
+   .details .detailed_info {
+   margin: 50px auto;
+   }
+
+   .details img {
+   margin: 0 auto;
+   display: block;
+   }
+
+   .details h3 {
+   font-weight: bold;
+   font-size: 20px;
+   font-family: "Poppins", sans-serif;
+   }
+
+   .details p {
+   font-size: 16px;
+   line-height: 1.5em;
+   font-family: "Nunito Sans", sans-serif;
+   }
+
+   .details ul li {
+   font-size: 16px;
+   line-height: 1.7em;
+   font-family: "Nunito Sans", sans-serif;
+   }
+   #footer {
+     text-align: center;
+     padding: 3px;
+     background-color: #fbdff2;
+     color: black;
+     display:block;
+   }
+ </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <div class="background">
+        <center><img src="{% static 'gallery/img/bloom.png' %}" padding-top="0%" padding-bottom="5%" padding-left="7%" padding-right="0%" background-repeat="no repeat" background-size="100%" height="500" width="900" alt="BACKGROUND"></center>
+  </div>
+
+    <div class="container">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" charset="utf-8"></script>
+ <br>
+ <br>
+
+<div id="our_story">
+  <center><h2>Get to know us...</h2></center>
+<center>  <p>A girl's love of flowers inspired her to start this company. <br>
+     We believe in giving back to the community therefore 10% of the earnings are donated to charities. <br>
+     Bloom by Fatema, based in Bahrain, offers flowers for all occasions.<br>
+     We are passionate about flowers and strive to provide the best bouquet possible to create everlasting memories.<br>
+     What are you waiting for? Order today and recieve your flowers on the same day! <br>
+     As we always say, flowers can say it better so send flowers to all your loved ones. </p> <center>
+</div>
+<br>
+<br>
+<br>
+  <section id="faq">
+    <center><h2>Frequently Asked Questions</h2></center>
+    <center><p>These frequently asked questions will be able to help guide you and answer your questions. <br>
+      If you encounter any other issues, please do not hesitate to contact us.</p></center>
+   <div class="container faq">
+     <div class="container">
+       <div class="row">
+         <div class="col-sm-12">
+           <div class="accordions">
+             <!-- 1st accordion menu -->
+             <div class="accordion-item">
+               <div class="accordion-title" data-tab="item4">
+                 <h3>How to contact the company? <i class="fa fa-chevron-down"></i></h3>
+               </div>
+               <div class="accordion-content" id="item4">
+                 <p>
+                   Contact us through our number +9731789098.
+                   You can also fill the contact us form given on the website or click on the following button to access the form.
+                 </p>
+                 <input href="/contactus/" type="button"  value="Contact us form" >
+               </div>
+             </div>
+
+             <!-- 2nd accordion menu -->
+             <div class="accordion-item">
+               <div class="accordion-title" data-tab="item2">
+                 <h3> How to order from the website? <i class="fa fa-chevron-down"></i></h3>
+               </div>
+               <div class="accordion-content" id="item2">
+                 <p>
+                   Just choose the bouquet you would like and add it to your cart. You can place your order and checkout from the cart page.
+                   You can also select bouquets based on the occassion.
+                 </p>
+               </div>
+             </div>
+
+             <!-- 3rd accordion menu -->
+             <div class="accordion-item">
+
+
+               <div class="accordion-title" data-tab="item3">
+                 <h3>What is the delivery charge and payment method?<i class="fa fa-chevron-down"></i></h3>
+               </div>
+               <div class="accordion-content" id="item3">
+                 <p>
+                  We offer free delivery to all areas in Bahrain. Currently, we only deliver to Bahrain.
+                  We accept credit and debit cards, we also provide cash on delivery.
+                 </p>
+               </div>
+             </div>
+
+             <!-- 4th accordion menu -->
+             <div class="accordion-item">
+               <div class="accordion-title" data-tab="item1">
+                 <h3>The flowers I ordered do not look like the flowers I recieved. What do I do? <i class="fa fa-chevron-down"></i></h3>
+               </div>
+               <div class="accordion-content" id="item1">
+                 <p>
+                  We take great care when designing the flower arrangements available on our website. We make sure to deliver bouquets that resemble the image on the website,
+                 but unfortunately this is not always possible as our florists may sometimes need to make last-minute changes to the flowers that they use to make up the arrangements.
+               This may be due to stock availability in their area or due to the flowers required for a particular arrangement not being of a high enough standard.
+               In these cases, our florists will substitute the necessary flowers with others of a similar style or colour to your original order. You will also recieve a coupon of 50% off for your next order.
+                 </p>
+               </div>
+             </div>
+
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+   <script>
+     $(document).ready(function () {
+       $(".accordion-title").click(function (e) {
+         var accordionitem = $(this).attr("data-tab");
+         $("#" + accordionitem)
+           .slideToggle()
+           .parent()
+           .siblings()
+           .find(".accordion-content")
+           .slideUp();
+
+         $(this).toggleClass("active-title");
+         $("#" + accordionitem)
+           .parent()
+           .siblings()
+           .find(".accordion-title")
+           .removeClass("active-title");
+
+         $("i.fa-chevron-down", this).toggleClass("chevron-top");
+         $("#" + accordionitem)
+           .parent()
+           .siblings()
+           .find(".accordion-title i.fa-chevron-down")
+           .removeClass("chevron-top");
+       });
+     });
+   </script>
+                </div>
+                <footer id=footer>
+                <div >
+                  <p>Bloom By Fatema<br>
+                    <a href="mailto:Bloom@gmail.com">Bloom@gmail.com</a></p>
+                  </div>
+                  </footer>
+
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+  {% block content %}
+<style>
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #fbdff2;
+    color: black;
+    display:block;
+  }
+  .contactus{
+    background-color:#b5f7d7;
+  }
+  .card {
+    background-color:#9a88a9;
+  }
+</style>
+<script>
+  function submit()
+{
+alert("Succesfully submitted! You will recieve a reply within 2-3 business days.")
+}
+  </script>
+  <div id="contactus">
+    {% csrf_token %}
+    <div class="card mt-5">
+      <div class="card-title text-center mt-3">
+        <h2 class="text-white">Contact us</h2>
+        <h4>Please fill in the following form to get in touch with us.</h4>
+    </div>
+<center><form class="pure-form pure-form-aligned">
+    <fieldset>
+        <div class="pure-control-group text-center">
+            <label for="aligned-name text-center">Full name</label>
+            <input type="text" name="name" id="aligned-name text-center" placeholder="name" />
+        </div>
+        <div class="pure-control-group text-center">
+            <label for="aligned-email text-center">Email Address</label>
+            <input type="email" name="email" id="aligned-email text-center" placeholder="Email Address" />
+        </div>
+        <div class="pure-control-group text-center">
+            <label for="aligned-foo text-center">Message</label>
+            <textarea type="text" name="msg" class="pure-input-1-2" placeholder="Leave us a message"></textarea>
+        </div>
+        <div class="pure-controls">
+            <button type="submit" class="pure-button pure-button-primary" onsubmit="submit()" style="background-color:#52487f; color:white; font-weight:bold">Submit</button>
+        </div>
+    </fieldset>
+</form> </center>
+</div>
+<div class="py-5 text-center">
+  <h6>Please note:</h6>
+  <p class="lead">You can also contact us on the following number +97390876543.<br>
+You will recieve a reply within 2-3 business days</p>
+</div>
+</div>
+<br>
+<footer id=footer>
+<div >
+  <p>Bloom By Fatema<br>
+    <a href="mailto:Bloom@gmail.com">Bloom@gmail.com</a></p>
+  </div>
+  </footer>
+
+{% endblock %}

@@ -1,0 +1,467 @@
+{% extends 'base.html' %}
+{% load static %}
+  {% block content %}
+<style>
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #fbdff2;
+    color: black;
+    display:block;
+  }
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  .Paymentform{
+    float:left;
+  }
+    </style>
+    <script>
+      function pay()
+{
+    alert("Succesfully paid! You will recieve your order soon!.")
+}
+      </script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+
+  <body class="bg-light">
+
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      {% csrf_token %}
+      <h2>Checkout form</h2>
+      <p class="lead">Please fill in the following form to place your order. If you face any concern, please do not hesitate to contact us on the following number +97390876543.
+      We currently only offer delivery to Bahrain, we will soon ship all over the world so stay tuned!</p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text" style="color:#52487f">Your cart</span>
+          <span class="badge rounded-pill" style="background-color:#52487f; color:white">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <h6>  <label for="country" class="form-label" class="my-0">Product name</label></h6>
+              <select class="form-select" id="country" required>
+                <option value="">Choose...</option>
+                  <option>Fatima</option>
+                  <option>Elegance</option>
+                  <option>Blair</option>
+                  <option>Anastasia</option>
+                  <option>Ayesha</option>
+                  <option>Marigold</option>
+                  <option>Pretty</option>
+                  <option>Jane</option>
+                  <option>Summer vibes</option>
+                  <option>Sarah</option>
+                  <option>Jameela</option>
+                  <option>Jasmine</option>
+                  <option>Edith</option>
+                  <option>Congratulations</option>
+                  <option>Reem</option>
+                  <option>Royal</option>
+                  <option>Pretty in pink</option>
+                  <option>Ruqaya</option>
+                  <option>Pure</option>
+                  <option>Pink vibes</option>
+                  <option>Velvet</option>
+                  <option>Hydrangea</option>
+                  <option>First love</option>
+                  <option>Fall</option>
+                  <option>Classy</option>
+                  <option>Peachy</option>
+                  <option>Luna</option>
+                  <option>Diana</option>
+                  <option>Elizabeth</option>
+                  <option>Euphoria</option>
+                  <option>Sylvie</option>
+                  <option>January</option>
+                  <option>February</option>
+                  <option>March</option>
+                  <option>April</option>
+                  <option>May</option>
+                  <option>June</option>
+                  <option>July</option>
+                  <option>August</option>
+                  <option>September</option>
+                  <option>October</option>
+                  <option>November</option>
+                  <option>December</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid product.
+              </div>
+            <span class="text-muted">BHD</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <h6>  <label for="country" class="form-label" class="my-0">Second product</label></h6>
+              <select class="form-select" id="country" >
+                <option value="">Choose...</option>
+                  <option>Fatima</option>
+                  <option>Elegance</option>
+                  <option>Blair</option>
+                  <option>Anastasia</option>
+                  <option>Ayesha</option>
+                  <option>Marigold</option>
+                  <option>Pretty</option>
+                  <option>Jane</option>
+                  <option>Summer vibes</option>
+                  <option>Sarah</option>
+                  <option>Jameela</option>
+                  <option>Jasmine</option>
+                  <option>Edith</option>
+                  <option>Congratulations</option>
+                  <option>Reem</option>
+                  <option>Royal</option>
+                  <option>Pretty in pink</option>
+                  <option>Ruqaya</option>
+                  <option>Pure</option>
+                  <option>Pink vibes</option>
+                  <option>Velvet</option>
+                  <option>Hydrangea</option>
+                  <option>First love</option>
+                  <option>Fall</option>
+                  <option>Classy</option>
+                  <option>Peachy</option>
+                  <option>Luna</option>
+                  <option>Diana</option>
+                  <option>Elizabeth</option>
+                  <option>Euphoria</option>
+                  <option>Sylvie</option>
+                  <option>January</option>
+                  <option>February</option>
+                  <option>March</option>
+                  <option>April</option>
+                  <option>May</option>
+                  <option>June</option>
+                  <option>July</option>
+                  <option>August</option>
+                  <option>September</option>
+                  <option>October</option>
+                  <option>November</option>
+                  <option>December</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid product.
+              </div>
+            <span class="text-muted">BHD</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+          <h6>  <label for="country" class="form-label" class="my-0">Third product</label></h6>
+            <select class="form-select" id="country" >
+              <option value="">Choose...</option>
+                <option>Fatima</option>
+                <option>Elegance</option>
+                <option>Blair</option>
+                <option>Anastasia</option>
+                <option>Ayesha</option>
+                <option>Marigold</option>
+                <option>Pretty</option>
+                <option>Jane</option>
+                <option>Summer vibes</option>
+                <option>Sarah</option>
+                <option>Jameela</option>
+                <option>Jasmine</option>
+                <option>Edith</option>
+                <option>Congratulations</option>
+                <option>Reem</option>
+                <option>Royal</option>
+                <option>Pretty in pink</option>
+                <option>Ruqaya</option>
+                <option>Pure</option>
+                <option>Pink vibes</option>
+                <option>Velvet</option>
+                <option>Hydrangea</option>
+                <option>First love</option>
+                <option>Fall</option>
+                <option>Classy</option>
+                <option>Peachy</option>
+                <option>Luna</option>
+                <option>Diana</option>
+                <option>Elizabeth</option>
+                <option>Euphoria</option>
+                <option>Sylvie</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid product.
+            </div>
+                        <span class="text-muted">BHD </span>
+            </li>
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+              <h6 class="my-0">Promo code</h6>
+              <small>EXAMPLECODE</small>
+            </div>
+            <span class="text-success">−BHD 5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (BHD)</span>
+            <strong>25 BHD</strong>
+          </li>
+        </ul>
+
+        <form class="card p-2" >
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Promo code">
+            <button type="submit" class="btn btn-secondary">Redeem</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Please fill in the form with your details</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="username" class="form-label">Username</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="username" placeholder="Username" required>
+              <div class="invalid-feedback">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="building 1234 road 6758 villa 897" required>
+              <div class="invalid-feedback">
+                Please enter your full address.
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">Country</label>
+              <select class="form-select" id="country" required>
+                <option value="">Choose...</option>
+                  <option>Bahrain</option>
+                  <option>Currently delivery in Bahrain available</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">Area</label>
+              <div>
+              <select class="form-select" id="state" required>
+                <option value="">Choose...</option>
+                <option>Manama governate</option>
+                <option>Muharraq governate</option>
+                <option>Northern governate</option>
+                <option>Southern governate</option>
+
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid area name.
+              </div>
+            </div>
+            </div>
+
+<br>
+<br>
+<div>
+          <hr class="my-4">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Save this information for next time</label>
+          </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr class="my-3">
+<div id="Paymentform">
+          <h4 class="mb-3" style=" text-align: left;">Payment</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Credit card</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Debit card</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">Cash on delivery</label>
+            </div>
+          </div>
+          </div>
+<br>
+<br>
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Name on card</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Full name as displayed on card</small>
+              <div class="invalid-feedback">
+                Name on card is required
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Expiration</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+
+
+<br>
+<br>
+  <hr class="my-4">
+          <button class="w-100 btn btn-primary btn-lg" type="submit" style="background-color:#52487f" onclick="pay()">Checkout</button>
+          <br>
+          <br>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+  </script>
+<br>
+<br>
+<footer id=footer>
+<div >
+  <p>Bloom By Fatema<br>
+    <a href="mailto:Bloom@gmail.com">Bloom@gmail.com</a></p>
+  </div>
+  </footer>
+
+{% endblock %}
